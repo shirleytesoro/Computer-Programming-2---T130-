@@ -14,7 +14,7 @@ int main()
       if(a[i]< 0){
          printf("\nInvalid input.Enter again.");}     
     if (a[i]<0){
-     printf("\nInput number %d :",i);
+     printf("\nInput number:",i);
       scanf("%d",&a[i]);
   }
 }
