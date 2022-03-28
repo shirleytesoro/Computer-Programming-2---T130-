@@ -1,0 +1,47 @@
+#include<stdio.h>
+
+int main()
+{
+    int id,unit;
+    float charge,mamount,netamount,surcharge=0;
+    printf("Customer ID#:");
+    scanf("%d",&id);
+    printf("Unit Consumed:");
+     scanf("%d",&unit);
+     
+    printf("Electricity Bill \n");
+    printf("Customer ID#         :%d\n",id);
+    printf("Unit Consumed        :%d\n",unit);      
+    if(unit <= 199){
+    charge = 1.50;
+    mamount = unit * charge;
+    printf("Amount charges @P1.50 per unit=%.2f\n",mamount);
+    }
+    else if(unit >= 250 && unit < 400){
+    charge = 1.60;
+    mamount = unit * charge;
+    printf("Amount charges @P1.60 per unit=%.2f\n",mamount);
+    }
+    else if(unit >= 450 && unit < 600){
+    charge = 1.85;
+    mamount = unit * charge;
+    printf("Amount charges @P1.85 per unit=%.2f\n",mamount);
+    }
+    else if(unit >= 600){
+     charge = 2.00;
+     mamount = unit * charge;
+    printf("Amount charges@P2.00 per unit=% 2f\n",mamount);
+    }
+    if(mamount > 400)
+    { 
+    charge = (mamount * 10/100.0);
+    printf("\nSurcharge Amounts is = %.2f\n",charge);
+    netamount = mamount + charge;
+    printf("\nTotal Customer Bill = %.2f\n",netamount); 
+    }
+    if(mamount < 100){
+    netamount = 100;
+    printf("\nThe total amount is 100");
+   } 
+    return 0;
+}
