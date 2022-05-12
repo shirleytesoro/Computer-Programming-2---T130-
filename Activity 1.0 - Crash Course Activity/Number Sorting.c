@@ -35,7 +35,7 @@ printf("Input the number of array:");
      
   }
    printf("Sorted list:\n");
-     for(i=0;i<num;i++)
+     for(i=1;i<num;i++)
     {
      printf("%d ",arr[i]);
   }
